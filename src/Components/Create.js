@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 
+//setting up export of data from API
 export default function Create() {
     let history = useNavigate();
     const [title, setTitle] = useState('');
@@ -24,7 +25,7 @@ export default function Create() {
             history('/Read')
             })
     }
-
+//setting up popover
     const popover = (
       <Popover id="popover-basic">
         <Popover.Header as="h3">Form Instructions</Popover.Header>

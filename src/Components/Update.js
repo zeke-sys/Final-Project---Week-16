@@ -20,6 +20,7 @@ export default function Update() {
         setDuration(localStorage.getItem('Duration'));
     }, []);
 
+    //building update function
     const updateAPIData = (event) => {
       event.preventDefault()
         axios.put(`https://64f3f3a8932537f4051a0ad0.mockapi.io/Festivals_API/festivals/${id}`, {
@@ -32,6 +33,8 @@ export default function Update() {
             history('/read')
         })
     }
+
+    //currently having some issues with this. Will keep looking at it
     return (
         <div className='main-table'>
         <Form className='create-form'>
@@ -42,17 +45,17 @@ export default function Update() {
 
         <Form.Group className="mb-3">
           <Form.Label>Festival Date</Form.Label>
-          <Form.Control type="text" placeholder="festival date" value={day} onChange={(e) => setDate(e.target.value)}/>
+          <Form.Control type="text" placeholder="festival date" value={date} onChange={(e) => setDate(e.target.value)}/>
         </Form.Group>
         
         <Form.Group className="mb-3">
           <Form.Label>Artist Name</Form.Label>
-          <Form.Control type="text" placeholder="artist name" value={instructor} onChange={(e) => setName(e.target.value)}/>
+          <Form.Control type="text" placeholder="artist name" value={name} onChange={(e) => setName(e.target.value)}/>
         </Form.Group>
 
         <Form.Group className="mb-3">
           <Form.Label>Duration</Form.Label>
-          <Form.Control type="text" placeholder="duration" value={instructor} onChange={(e) => setDuration(e.target.value)}/>
+          <Form.Control type="text" placeholder="duration" value={duration} onChange={(e) => setDuration(e.target.value)}/>
         </Form.Group>
         
         <Button variant="primary" type='submit' onClick={updateAPIData}>

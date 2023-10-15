@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { Table, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+
+//function takes the mockdata and show it in the table
 function Read() {
     const [APIData, setAPIData] = useState([]);
     useEffect(() => {
@@ -36,6 +38,7 @@ function Read() {
         })
     }
 
+    //rendering/returning everything that is added in the form in a table
     return (
         <div className='main-table'>
             <Table striped bordered hover>
@@ -44,7 +47,7 @@ function Read() {
                         <th>ID</th>
                         <th>Title</th>
                         <th>Date</th>
-                        <th>Name</th>
+                        <th>Lineup</th>
                         <th>Duration</th>
                         <th>Update</th>
                         <th>Delete</th>

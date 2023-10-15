@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import {LinkContainer} from 'react-router-bootstrap';
 
+//building navigation bar
 export default class NavBar extends React.Component{
     render(){
         return(
@@ -14,7 +15,7 @@ export default class NavBar extends React.Component{
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <LinkContainer className="link" to='/Home'>
+                        <LinkContainer className="link" to='/'>
                         <Nav.Link>Home</Nav.Link>
                         </LinkContainer>
 

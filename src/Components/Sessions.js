@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import venue from '../pictures/venue.jpg';
+import wheel from '../pictures/wheel.jpg';
 
 function SessionCard() {
   const [APIData, setAPIData] = useState([]);
@@ -14,6 +14,7 @@ function SessionCard() {
             })
     }, []);
 
+//using data map this time around as opposed to one of my last assignments
     return (
         <div className='card-container'>
           
@@ -21,7 +22,7 @@ function SessionCard() {
             return (
         <div>
               <Card className='cardBox'>
-                <Card.Img className='cardImg' variant="top" src={venue} />
+                <Card.Img className='cardImg' variant="top" src={wheel} />
                 <Card.Body>
                   <Card.Title>{data.title}</Card.Title>
                   <Card.Text className='card-text'>

@@ -1,10 +1,10 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import CarouselView from './Carousel';
-//import ImageLayout from './Image';
+//import ImageLayout from './Image'; //decided to forgo this as I got the carousel to work
 import { Link } from 'react-router-dom';
 
-
+//landing page
 function Home() {
   return (
 

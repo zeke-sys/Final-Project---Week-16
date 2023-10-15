@@ -1,19 +1,19 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import Logo from '../pictures/Logo.png';
+import Logo from '../pictures/Logo.png'; //importing logo
 import { Container } from 'react-bootstrap';
 /*import goers from '../pictures/goers.jpg';
-import concert from '../pictures/concert.jpg';*/
+import concert from '../pictures/concert.jpg';*/ //Decided to add the links instead b/c for some reason these were not working
 
-export default class CarouselView extends React.Component{
+export default class CarouselView extends React.Component{ //Adding carousel to show a few pics, following the react bootstrap controlled example
 render() {
     return(
-      <Container>
+      <Container> 
       <Carousel data-bs-theme="dark">
         <Carousel.Item interval={1500}>
             <img
-              //className="d-block w-100"
-              src={Logo}
+              className="d-block w-100"
+              src={Logo} /*trying the local src logo here as opposed to links*/
               alt="Logo slide"
             />
             <Carousel.Caption>
@@ -74,5 +74,5 @@ render() {
  
       </Container>
     );
- }
+ } //end of render
 }

@@ -4,7 +4,7 @@ import Create from './Components/Create';
 import Read from './Components/Read';
 import Update from './Components/Update';
 import Home from './Components/Home';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
@@ -15,7 +15,8 @@ function App() {
       
    <Router>
           <Header /> 
-          <Container>   
+          <Container>
+            <Routes>   
                 <Route path='/' element={<Home/>}/>    
               
                 <Route path='/Create' element={<Create />}/>
@@ -25,6 +26,7 @@ function App() {
                 <Route path='/Read' element={<Read />}/>
 
                 <Route path='/Sessions' element={<Sessions />}/>
+            </Routes>
         </Container>
         <Footer />  
     </Router>
