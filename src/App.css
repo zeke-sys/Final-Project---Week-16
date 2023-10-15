@@ -1,0 +1,138 @@
+
+.main{
+   /*display: flex;*/
+   justify-content: center;
+   align-items: center;
+   min-height: 10vh;
+   background-color: white;
+   color:black;
+   padding: 10px;
+   border-top-style:solid;
+   border-top-color: black;
+   border-bottom-style:solid;
+   border-bottom-color: black;
+   width: 70%;
+ }
+
+ .main-table{
+   justify-content: center;
+   align-items: center;
+   min-height: 10vh;
+   background-color: white;
+   color:black;
+   padding: 10px;
+   border-top-style:solid;
+   border-top-color: black;
+   border-bottom-style:solid;
+   border-bottom-color: black;
+   max-width: 1000px;
+   margin: 0 auto;
+ }
+ 
+ body{
+   background-color: rgb(252, 204, 131);
+   font-family: "Marcellus";
+ }
+   
+ .heading{
+   background-color: rgb(252, 204, 131);
+   width: 100%;
+   padding: 10px;
+ }
+ 
+ .footerText{
+   color:black;
+ }
+ 
+ h1{
+   color:black;
+ }
+ 
+ h3{
+   color:black;
+ }
+ 
+ h2{
+   text-align: center;
+ }
+ 
+ .navbar{
+   border-top-style:solid;
+   border-bottom-style: solid;
+   border-color:black;
+   padding: 5px 10px;
+   margin: 20px auto;
+   width: 100%;
+   background-color: black;
+ }
+ 
+ .link{
+   color:whitesmoke;
+ }
+
+ .link:hover {
+   color:rgb(128, 0, 0);
+ }
+
+ #drop-item{
+   background-color: darkgray;
+ }
+ 
+ .create-form{
+   width: 100%;
+ }
+ 
+ .create-form label{
+   color: black !important;
+   font-size: 12px !important;
+ }
+
+ .slide-width{
+    width: 400px;
+    margin:auto;
+ }
+ 
+ .cardBox {
+   display: flex;
+   justify-content: left;
+   align-items: left;
+   cursor:pointer;
+}
+
+ .card-container {
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+   margin:auto;
+   justify-content: space-evenly;
+ }
+
+ .cardImg {
+   max-height: 200px;
+   min-height: 200px;
+   border-radius:  .65rem;
+ }
+
+ .btn-link{
+   background-color: rgb(252, 204, 131);
+   border-radius: 10px;
+   margin:auto;
+   justify-content: center;
+   display:flex;
+
+ }
+
+ .card {
+   border-style: solid;
+   border-color: black;
+   border-width: 2pt;
+   padding-top: 2px;
+   background-color: whitesmoke;
+   padding-bottom: 2px;
+   width: 300px;
+   margin: 10px;
+  }
+
+ .card-text{
+   font-size: 10pt;
+ } 
